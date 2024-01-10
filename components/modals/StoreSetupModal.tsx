@@ -4,10 +4,8 @@ import usePreviewModal from "@/hooks/use-preview-modal";
 import Modal from "../ui/Modal";
 import Gallery from "../gallery";
 import Info from "../Info";
-import useStoreSetupModal from "@/hooks/use-store-setup-modal";
 
 export default function StoreSetupModal() {
-  const storeSetupModal = useStoreSetupModal();
   const product = usePreviewModal((state) => state.product);
 
   if (!product) {
