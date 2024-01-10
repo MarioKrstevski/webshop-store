@@ -1,6 +1,8 @@
+import { storeId } from "@/global/variables";
 import { Product } from "@/types";
 import qs from "query-string";
-const API_URL = process.env.NEXT_PUBLIC_API_URL + "/products";
+const API_URL =
+  process.env.NEXT_PUBLIC_API_URL + "/" + storeId + "/products";
 interface Query {
   categoryId?: string;
   colorId?: string;

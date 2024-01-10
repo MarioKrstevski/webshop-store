@@ -37,7 +37,7 @@ export default function Modal({
                 }
               >
                 <div className="relative flex w-full items-center overflow-hidden bg-white px-4 pb-8 pt-14 shadow-2xl sm:px-6 sm:pt-8 md:px-6 md:p-8 ">
-                  <div className="aboslute right-4 top-4">
+                  <div className="absolute right-4 top-4">
                     <IconButton
                       icon={<XIcon size={15} />}
                       onClick={onClose}
