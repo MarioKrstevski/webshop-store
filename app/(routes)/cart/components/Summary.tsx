@@ -26,6 +26,7 @@ export default function Summary({}: SummaryProps) {
         `${process.env.NEXT_PUBLIC_API_URL}/${storeId}/checkout`,
         {
           productIds: items.map((product) => product.id),
+          redirectUrl: `${window.location.origin}`,
         }
       );
       window.location = resp.data.url;
